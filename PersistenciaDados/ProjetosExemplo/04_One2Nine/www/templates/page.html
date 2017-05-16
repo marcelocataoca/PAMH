@@ -1,0 +1,11 @@
+<ion-view title="Page" id="page4" hide-back-button="true">
+	<div>Hello World</div>
+	<div  ng-controller="jogar">
+		<ion-content padding="true" class="has-header boxBt">			
+			<div class="lista" ng-repeat="item in list">
+				<button id="page-button{{item.valor}}" class="btNum val linha" ng-click="sequencial('{{item.valor}}')" >{{item.valor}}</button>
+			</div>
+		</ion-content>
+		<div class="time">{{time}}</div>
+	</div>	
+</ion-view>

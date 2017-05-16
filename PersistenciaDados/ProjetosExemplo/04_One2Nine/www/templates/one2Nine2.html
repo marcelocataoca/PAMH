@@ -1,0 +1,20 @@
+<ion-view title="One2Nine" id="page3">
+    <ion-content padding="true" class="has-header" ng-controller="tela2">
+        <form id="one2Nine2-form4" class="list">
+            <label class="item item-input block" id="one2Nine2-div1">
+                <div class="input-label center">Best time was:</div><div class="center" placeholder="">{{bestTime}}</div>
+            </label>
+        </form>
+        <h1 id="one2Nine2-heading4" style="color:#000000;"></h1>
+        <form id="one2Nine2-form5" class="list">            
+            <label class="item item-input" id="one2Nine2-div3">
+                <div class="input-label center">Played by:</div><div class="center" placeholder=""></div>
+            </label>
+            <label class="item item-input block" id="one2Nine2-div4" name="nome">
+                <div class="input-label center"></div><div class="center" placeholder="Nome, data e horas.">{{user.name}}</br>
+                    {{user.date | date:'dd-MM-yyyy HH:mm:ss'}} 
+                </div>
+            </label>
+        </form>
+    </ion-content>
+</ion-view>
