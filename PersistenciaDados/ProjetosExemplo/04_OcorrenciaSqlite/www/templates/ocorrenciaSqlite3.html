@@ -1,0 +1,12 @@
+<ion-view title="OcorrenciaSqlite" id="page3">
+	<ion-content padding="true" class="has-header">
+		<ion-list>
+			<ion-scroll direction="y" class="available-scroller">
+				<ion-item ng-repeat="anota in lista">
+					{{anota.nome}}
+					<span class="item-note">{{anota.desc}}</span>	
+				</ion-item>
+			</ion-scroll>
+		</ion-list>
+	</ion-content>	
+</ion-view>

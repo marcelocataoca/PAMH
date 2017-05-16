@@ -1,0 +1,15 @@
+<ion-view title="OcorrenciaSqlite" id="page2">
+    <ion-content padding="true" class="has-header" ng-controller="addOcorrencia">
+        <form id="ocorrenciaSqlite2-form2" class="list">
+            <label class="item item-input" id="ocorrenciaSqlite2-input2">
+                <span class="input-label">Input</span>
+                <input type="text" placeholder="Nome da ocorrencia" ng-model="input.name">
+            </label>
+            <label class="item item-input" id="ocorrenciaSqlite2-input3">
+                <span class="input-label">Input</span>
+                <input type="text" placeholder="Descricao da ocorrencia" ng-model="input.desc">
+            </label>
+        </form>
+        <button id="ocorrenciaSqlite2-button35" class="button button-positive  button-block" ng-click="salvar(input.nome,input.desc)">Salvar</button>
+    </ion-content>
+</ion-view>
