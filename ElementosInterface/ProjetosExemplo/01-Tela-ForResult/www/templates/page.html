@@ -1,0 +1,15 @@
+<ion-view title="Add a new task TO DO" id="page8">
+  <ion-content padding="true" class="has-header">    
+    <form id="page-form4" class="list">
+      <label class="item item-input" id="page-input6">
+        <span class="input-label">Insert task name</span>
+        <input type="text" placeholder="" ng-model="input.name">
+      </label>
+      <label class="item item-input" id="page-input7">
+        <span class="input-label">Insert task decription</span>
+        <input type="text" placeholder="" ng-model="input.description">
+      </label>
+      <button id="page-button5" class="button button-positive  button-block" ng-click="addTask(input.name, input.description)">ADD TASK</button>
+    </form>
+  </ion-content>
+</ion-view>

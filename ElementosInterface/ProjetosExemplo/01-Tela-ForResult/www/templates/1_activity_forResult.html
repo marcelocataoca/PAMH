@@ -1,0 +1,11 @@
+<ion-view title="TODO" id="page1">
+  <ion-content padding="true" class="has-header">
+    <a id="1_activity_forResult-button4" class="button button-positive  button-block" ng-click="goPageInsert()">ADD TASK TO DO</a>
+    <ion-list id="home-list2">
+      <ion-item ng-repeat="item in items" on-long-press="itemOnLongPress(item.name)" on-touch-end="">
+        {{item.name}}<br>
+        <span class="item-note">{{item.description}}</span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
