@@ -1,0 +1,19 @@
+<ion-view title="Add new collaborator" id="page2">
+    <ion-content padding="true" class="has-header">
+        <form id="newCollaborator-form2" class="list">
+            <label class="item item-input" id="newCollaborator-input2">
+                <span class="input-label">Input</span>
+                <input type="text" placeholder="insert collaborator name" ng-model="input.name">
+            </label>
+            <label class="item item-input" id="newCollaborator-input3">
+                <span class="input-label">Input</span>
+                <input type="number" placeholder="insert collaborator phone" ng-model="input.phone">
+            </label>
+            <label class="item item-input" id="newCollaborator-input4">
+                <span class="input-label">Input</span>
+                <input type="text" placeholder="insert collaborator e-mail" ng-model="input.email">
+            </label>
+        </form>
+        <button id="newCollaborator-button4" class="button button-positive  button-block" ng-click="add(input.name,input.phone,input.email)">ADD NEW COLLABORATOR</button>
+    </ion-content>
+</ion-view>
