@@ -1,0 +1,24 @@
+<ion-view title="Pesquisa de interesse" id="page1">
+    <ion-content padding="true" class="has-header">
+        <div id="pesquisaDeInteresse-markdown2" style="color:#000000;"></div>
+        <form id="pesquisaDeInteresse-form1" class="list">
+            <label class="item item-input" id="pesquisaDeInteresse-input1">
+                <span class="input-label">Input</span>
+                <input type="text" placeholder="João" ng-model="input.name">
+            </label>
+            <label class="item item-select" id="pesquisaDeInteresse-select1">
+                <span class="input-label"></span>
+                <select ng-model="regiaoSelected" ng-options="v.name for v in listaRegiao" ng-init="regiaoSelected = listaRegiao[0]">
+                     <!--<option ng-repeat="option in data.listaRegiao" value="{{option.name}}">{{option.name}}</option>-->
+                </select>
+            </label>
+
+            <ion-radio id="pesquisaDeInteresse-radio3" value="0 a 17 anos" ng-model="selecionado.radio">0 a 17 anos</ion-radio>
+            <ion-radio id="pesquisaDeInteresse-radio2" value="18 a 34 anos" ng-model="selecionado.radio">18 a 34 anos</ion-radio>
+            <ion-radio id="pesquisaDeInteresse-radio4" value="Acima de 35 anos" ng-model="selecionado.radio">Acima de 35 anos</ion-radio>            
+
+            <ion-checkbox ng-repeat="item in lista" ng-model="item.checked" ng-checked="item.checked">{{item.text}}</ion-checkbox>
+        </form>
+        <button id="pesquisaDeInteresse-button33" class="button button-positive  button-block" ng-click="gravar(input.name, regiaoSelected)">GRAVAR PESQUISA</button>
+    </ion-content>
+</ion-view>
