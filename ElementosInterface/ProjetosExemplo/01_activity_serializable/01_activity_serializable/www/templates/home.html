@@ -1,0 +1,25 @@
+<ion-view title="CALCULAR O IMC" id="page1">
+    <ion-content padding="true" class="has-header">        
+        <form id="home-form4" class="list">
+            <label class="item item-input" id="home-input3">
+                <input type="text" placeholder="insira o nome" ng-model="input.nome">
+            </label>
+        </form>
+        <form id="home-form5" class="list">
+            <label class="item item-input" id="home-input4">
+                <input type="number" placeholder="insira a idade" ng-model="input.idade">
+            </label>
+        </form>
+        <form id="home-form6" class="list">
+            <label class="item item-input" id="home-input5">
+                <input type="number" placeholder="insira a altura (Ex: 1.70)" ng-model="input.altura">
+            </label>
+        </form>
+        <form id="home-form7" class="list">
+            <label class="item item-input" id="home-input6">
+                <input type="number" placeholder="insira o peso" ng-model="input.peso">
+            </label>
+        </form>
+        <button id="home-button8" class="button button-positive button-block" ng-click="enviar(input.nome, input.idade, input.altura, input.peso)">CALCULAR</button>
+    </ion-content>
+</ion-view>
